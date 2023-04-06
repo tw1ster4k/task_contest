@@ -1,24 +1,17 @@
-import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { cn } from '@bem-react/classname';
+import Navbar from './components/Navbar/Navbar';
+import Main from './components/Main/Main';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
+  const cnApp = cn("App")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={cnApp()}>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Main />}/>
+      </Routes>
     </div>
   );
 }

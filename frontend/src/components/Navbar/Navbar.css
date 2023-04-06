@@ -1,0 +1,24 @@
+@font-face {
+        font-family: Roboto-Medium;
+        src: url(../../fonts/Roboto-Medium.ttf);
+}
+
+.Navbar{
+    background-color: #24272A;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Navbar-Link{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto-Medium;
+}
+
+.Navbar-Image{
+    height: 70px;
+    
+}
+

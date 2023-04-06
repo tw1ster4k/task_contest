@@ -1,0 +1,111 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../../fonts/Roboto-Bold.ttf);
+}
+
+.Main{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 3800px;
+    justify-content: space-around;
+}
+
+.Main-History{
+    display: flex;
+    height: 800px;
+    width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Main-HistoryText{
+    width: 35%;
+    margin-left: 50px;
+
+}
+
+.Main-Text{
+    color: #404040;
+    font-family: Roboto-Bold;
+    font-size: x-large;
+}
+
+.Main-HistoryImage{
+    height: 60%;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+}
+
+.Main-Location{
+    width: 1100px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Main-Map{
+    margin-left: 50px;
+}
+
+.Main-LocationText{
+    margin-left: 50px;
+}
+
+.Main-Subjects{
+    display: flex;
+    height: 800px;
+    width: 1200px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Main-SubjectsText{
+    width: 20%;
+}
+
+.Main-SubjectsImage{
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+}
+
+.Main-Text_size_lg{
+    font-size: larger;
+}
+
+.Main-Ministry{
+    width: 1100px;
+    height: 600px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Main-MinistryImage{
+    height: 500px;
+    
+}
+
+.Main-MinistryLink{
+    text-decoration: none;
+    font-family: Roboto-Bold;
+    color: #ED1A24;
+}
+
+.Main-MinistryText{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
