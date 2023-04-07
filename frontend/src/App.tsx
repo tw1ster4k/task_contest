@@ -1,4 +1,3 @@
-import './App.css';
 import { cn } from '@bem-react/classname';
 import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
