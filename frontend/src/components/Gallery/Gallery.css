@@ -1,0 +1,11 @@
+.Gallery{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.Gallery-Image{
+    margin-top: 50px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+}

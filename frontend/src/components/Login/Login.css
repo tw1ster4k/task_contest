@@ -1,0 +1,31 @@
+.Login{
+    position: absolute;
+    background-color: #ffffff;
+    height: 400px;
+    width: 600px;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Login-Input{
+    height: 30px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: 0 0 8px rgba(0,0,0,5.5);
+}
+
+.Login-Button{
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+}

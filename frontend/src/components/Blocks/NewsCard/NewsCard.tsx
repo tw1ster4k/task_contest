@@ -6,7 +6,7 @@ interface NewsCard {
     author?: string,
     title: string,
     img ?: string,
-    body: string;
+    description: string;
 
 }
 
@@ -17,7 +17,7 @@ const NewsCard = (news : NewsCard) => {
         <img className={cnNewsCard("Image")} src={news.img ? news.img : "https://zapschool.ru/images/background/logo5.png"} alt="" />
         <h2 className={cnNewsCard("Title")}>Название:{news.title}</h2>
         <h3 className={cnNewsCard("Author")}>Автор:{news.author ? news.author : "Неизвестный"}</h3>
-        <p className={cnNewsCard("Description")} >{news.body}</p>
+        <p className={cnNewsCard("Description")} >{news.description}</p>
     </div>
   )
 }
