@@ -4,7 +4,7 @@ import "./Navbar.css"
 
 const Navbar = () => {
 
-    const Arr = [{link:'/news', name:"Новости"}, {link: '/documents', name:"Документы"}, {link:'/programms', name:"Программы"}, {link:'/education',name:'Обучение'}, {link:"/gallery",name:'Галерея'}, {link:'/reports',name:'Отчёты'}]
+    const Arr = [{link:'/news', name:"Новости"}, {link: '/documents', name:"Документы"}, {link:'/programms', name:"Программы"}, {link:"/gallery",name:'Галерея'}, {link:'/teachers',name:'Учителя'}]
 
     const cnNavbar = cn("Navbar")
   return (

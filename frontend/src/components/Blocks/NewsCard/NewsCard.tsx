@@ -1,16 +1,15 @@
 import { cn } from "@bem-react/classname"
 import "./NewsCard.css"
 
-interface NewsCard {
+interface INewsCard {
     id: number,
     author?: string,
     title: string,
     img ?: string,
-    description: string;
-
+    description: string,
 }
 
-const NewsCard = (news : NewsCard) => {
+const NewsCard = (news : INewsCard) => {
     const cnNewsCard = cn("NewsCard")
   return (
     <div className={cnNewsCard()}>

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../../fonts/Roboto-Bold.ttf);
+}
+
+.Programms{
+    margin: 0 auto;
+    background-color: #ffffff;
+    margin-top: 50px;
+    width: 1000px;
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+}
+
+.Programms-Title{
+    text-align: center;
+    font-family: Roboto-Bold;
+    color: #404040;;
+}
+
+
+.Programms-Link{
+    margin-left: 45%;
+    text-decoration: none;
+    font-family: Roboto-Bold;
+    color: #ED1A24;
+}

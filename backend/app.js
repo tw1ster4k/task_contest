@@ -20,8 +20,9 @@ app.use(morgan('dev'));
 
 //импорт роутов
 const NewsRoute = require('./routes/NewsRoute');
-const GalleryRoute = require('./routes/GalleryRoute')
-const AuthRoute = require('./routes/AuthRoute')
+const GalleryRoute = require('./routes/GalleryRoute');
+const AuthRoute = require('./routes/AuthRoute');
+const TeachersRoute = require('./routes/TeachersRoute');
 
 const sessionConfig = {
     name: 'Session',
@@ -47,6 +48,7 @@ const sessionConfig = {
 
   //роутинг
   app.use('/news', NewsRoute)
+  app.use("/teachers", TeachersRoute)
   app.use('/img', GalleryRoute)
   app.use('/', AuthRoute)
 
