@@ -1,11 +1,20 @@
 import React,{ChangeEvent, useState} from 'react'
 import './Login.css'
 import { cn } from '@bem-react/classname'
+import { useNavigate } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
 
-const Login = () => {
+interface ILogin {
+  admin?: string
+}
+
+const Login = ({admin} : ILogin) => {
     const [name, setName] = useState('')
     const [password, setPassword] = useState('')
     const cnLogin = cn("Login")
+
+    const navigate = useNavigate();
+    const dispatch = useDispatch();
 
     const NameSubmit = (event: ChangeEvent<HTMLInputElement>) => {
        setName(event.target.value)
@@ -24,16 +33,26 @@ const Login = () => {
           },
           body: JSON.stringify({name: name, password: password})
         })
-        const result = response.json().then((event) => alert(event.name) )
+        const result = response.json().then((el) => {
+          if(el.answer = "Done"){
+            dispatch({type: "ADMIN", payload: el.name})
+            navigate('/')
+            alert("Вы вошли!")
+          }else{
+            alert(el.answer)
+          }
+        })
      }
 
-  return (
-    <form className={cnLogin()}>
-        <input type="text" className={cnLogin("Input")} onChange={NameSubmit} placeholder="Имя" />
-        <input type="text" className={cnLogin("Input")} placeholder="Пароль" onChange={PasswordSubmit} />
-        <button onClick={AllSubmit} type="submit" className={cnLogin("Button")}>Log in</button>
-    </form>
-  )
+return(
+  <form className={cnLogin()}>
+      <input type="text" className={cnLogin("Input")} onChange={NameSubmit} placeholder="Имя" />
+      <input type="password" className={cnLogin("Input")} placeholder="Пароль" onChange={PasswordSubmit} />
+      <button onClick={AllSubmit} type="submit" className={cnLogin("Button")}>Log in</button>
+      </form>
+    
+    )
+  
 }
 
 export default Login

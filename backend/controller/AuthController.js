@@ -10,13 +10,13 @@ const login = async (req,res) => {
                 req.session.user = admin.name;
                 req.session.user_id = admin.id;
                 req.session.save(() => {
-                    res.json({ logIn: 'Done', name: admin.name });
+                    res.json({ answer: 'Done', name: admin.name });
                   });
             }else{
-                res.json({ error: 'Не правильный пароль' });
+                res.json({ answer: 'Не правильный пароль' });
             }
         }else{
-            res.json({ error: 'Аккаунт не найден' });
+            res.json({ answer: 'Аккаунт не найден' });
         }
     } catch (error) {
         res.send(`Error ------> ${error}`);

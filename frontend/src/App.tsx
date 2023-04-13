@@ -8,9 +8,16 @@ import Gallery from './components/Gallery/Gallery';
 import Login from './components/Login/Login';
 import Programms from './components/Programms/Programms';
 import Teachers from './components/Teachers/Teachers';
+import { useSelector } from 'react-redux';
+import './App.css'
+
+interface Istate {
+  name: string
+}
 
 function App() {
   const cnApp = cn("App")
+  const admin = useSelector((state: Istate) => state.name)
   return (
     <div className={cnApp()}>
       <Navbar />
@@ -19,7 +26,7 @@ function App() {
         <Route path='/news' element={<News />}/>
         <Route path="/documents" element={<Documents />}/>
         <Route path='/gallery' element={<Gallery />}/>
-        <Route path='/login' element={<Login />}/>
+        <Route path='/login' element={<Login admin={admin} />}/>
         <Route path='/programms' element={<Programms />}/>
         <Route path='/teachers' element={<Teachers />} />
       </Routes>
