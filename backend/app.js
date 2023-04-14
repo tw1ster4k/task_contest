@@ -13,16 +13,17 @@ const {sequelize} = require('./models')
 
 const {SESSION_SECRET} = "secret"
 
+app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '../public/')));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(morgan('dev'));
 
 //импорт роутов
 const NewsRoute = require('./routes/NewsRoute');
 const GalleryRoute = require('./routes/GalleryRoute');
 const AuthRoute = require('./routes/AuthRoute');
 const TeachersRoute = require('./routes/TeachersRoute');
+const LogoutRoute = require('./routes/LogoutRoute')
 
 const sessionConfig = {
     name: 'Session',
@@ -51,6 +52,7 @@ const sessionConfig = {
   app.use("/teachers", TeachersRoute)
   app.use('/img', GalleryRoute)
   app.use('/', AuthRoute)
+  app.use("/logout", LogoutRoute)
 
 
   const PORT = 3001;

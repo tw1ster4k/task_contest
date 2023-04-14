@@ -1,11 +1,14 @@
 const {Admin} = require('../models')
+const bcrypt = require('bcrypt')
 
 const login = async (req,res) => {
     const {name, password} = req.body
+    
     try {
         const admin = await Admin.findOne({ where: { name }, raw: true });
         if(admin){
-            const passCheck = password === admin.password;
+            const hash = await bcrypt.hash(admin.password, 10)
+            const passCheck = await bcrypt.compare(password, hash);
             if(passCheck){
                 req.session.user = admin.name;
                 req.session.user_id = admin.id;
@@ -25,9 +28,9 @@ const login = async (req,res) => {
 }
       const checkAdmin = async (req, res) => {
         if (req.session) {
-          res.json({ admin: 'Выполнено', name: req.session.user });
+          res.json({ answer: 'Выполнено', name: req.session.user });
         } else {
-          res.json({ error: 'Не выполнено' });
+          res.json({ answer: 'Не выполнено' });
         }
       };
 

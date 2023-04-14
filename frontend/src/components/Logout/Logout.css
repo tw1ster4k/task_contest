@@ -1,4 +1,4 @@
-.Login{
+.Logout{
     position: absolute;
     background-color: #ffffff;
     height: 400px;
@@ -15,15 +15,7 @@
     align-items: center;
 }
 
-.Login-Input{
-    height: 30px;
-    border-radius: 10px;
-    background-color: #ffffff;
-    border: none;
-    box-shadow: 0 0 8px rgba(0,0,0,5.5);
-}
-
-.Login-Button{
+.Logout-Button{
     height: 40px;
     width: 70px;
     border-radius: 10px;
