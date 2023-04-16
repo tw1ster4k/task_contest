@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../../../fonts/Roboto-Bold.ttf);
+}
+
+.NewTeacher{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+
+.NewTeacher-Label{
+    font-family: Roboto-Bold;
+    color: #404040;;
+}
+
+.NewTeacher-Title{
+    width: 30%;
+    height: 5%;
+}
+
+.NewTeacher-Image{
+    height: 5%;
+    width: 50%;
+}
+
+.NewTeacher-Description{
+    height: 10%;
+    width: 50%;
+}
+
+.NewTeacher-Button{
+    color: #404040;;
+    font-family: Roboto-Bold;
+    height: 10%;
+    width: 10%;
+    border: none;
+    cursor: pointer;
+}

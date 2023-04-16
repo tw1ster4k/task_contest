@@ -1,0 +1,53 @@
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../../../fonts/Roboto-Medium.ttf);
+}
+
+.NewsItem-Date{
+    margin-bottom: 2px;
+    color: #24272A;
+    font-family: Roboto-Medium;
+}
+
+.NewsItem-Title{
+    margin-bottom: 2px;
+    color: #24272A;
+    font-family: Roboto-Medium;
+}
+
+.NewsItem-Id {
+    margin-bottom: 2px;
+    color: #24272A;
+    font-family: Roboto-Medium;
+}
+
+.NewsItem-Button{
+    border-left: 1px solid grey;
+    font-family: Roboto-Medium;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -110px;
+    background-color: red;
+    display: flex;
+    height: 100%;
+    width: 100px;
+    transition: 0.2s;
+}
+
+.NewsItem-Button:hover{
+    border-left: 1px solid grey;
+    font-family: Roboto-Medium;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -9px;
+    background-color: red;
+    display: flex;
+    height: 100%;
+    width: 100px;
+    transition: 0.2s;
+}
+

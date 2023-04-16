@@ -1,0 +1,13 @@
+.NewsList{
+    display: flex;
+    flex-direction: column-reverse;
+    overflow-y: scroll;
+    padding: 0 10px;
+}
+
+.NewsList-Item{
+    border-bottom: 1px solid #24272A;
+    padding: 15px 0;
+    position: relative;
+    cursor: pointer;
+}

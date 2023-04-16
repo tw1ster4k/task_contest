@@ -1,0 +1,48 @@
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../../../fonts/Roboto-Medium.ttf);
+}
+
+.MainPanel{
+    position: absolute;
+    width: 60%;
+    min-height: 60%;
+    background-color: #FFFFFF;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0,0,0,5.5);
+    border-radius: 15px;
+}
+
+.MainPanel-Navbar{
+    position: fixed;
+    height: 10%;
+    width: 100%;
+    background-color: #24272A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.MainPanel-Link{
+    color: #ffffff;
+    text-decoration: none;
+    font-family: Roboto-Medium;
+}
+
+.MainPanel-Content{
+    width: 100%;
+    min-height: 90%;
+    position: absolute;
+    top: 10%;
+}
+
+.MainPanel-New{
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+}

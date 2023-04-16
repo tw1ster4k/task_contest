@@ -1,0 +1,44 @@
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../../../fonts/Roboto-Medium.ttf);
+}
+
+.PhotoItem-Id{
+    margin-bottom: 2px;
+    color: #24272A;
+    font-family: Roboto-Medium;
+}
+
+.PhotoItem-Image{
+    height: 80px;
+}
+
+.PhotoItem-Button{
+    border-left: 1px solid grey;
+    font-family: Roboto-Medium;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -110px;
+    background-color: red;
+    display: flex;
+    height: 100%;
+    width: 100px;
+    transition: 0.2s;
+}
+
+.PhotoItem-Button:hover{
+    border-left: 1px solid grey;
+    font-family: Roboto-Medium;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: -9px;
+    background-color: red;
+    display: flex;
+    height: 100%;
+    width: 100px;
+    transition: 0.2s;
+}

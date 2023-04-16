@@ -12,6 +12,13 @@ import Teachers from './components/Teachers/Teachers';
 import { useSelector, useDispatch } from 'react-redux';
 import './App.css'
 import Logout from './components/Logout/Logout';
+import MainPanel from './components/Panel/MainPanel/MainPanel';
+import NewsList from './components/Panel/NewsList/NewsList';
+import PhotoList from './components/Panel/PhotoList/PhotoList';
+import TeachersList from './components/Panel/TeachersList/TeachersList';
+import NewNews from './components/Panel/NewNews/NewNews';
+import NewTeacher from './components/Panel/NewTeacher/NewTeacher';
+import NewPhoto from './components/Panel/NewPhoto/NewPhoto';
 
 interface Istate {
   name: string
@@ -55,6 +62,14 @@ function App() {
         <Route path='/logout' element={<Logout />} />
         <Route path='/programms' element={<Programms />}/>
         <Route path='/teachers' element={<Teachers />} />
+        <Route path='/panel' element={<MainPanel />} >
+          <Route path='news' element={<NewsList />} />
+            <Route path='news/new' element={<NewNews />} />
+          <Route path='gallery' element={<PhotoList />} />
+            <Route path='gallery/new' element={<NewPhoto />} />
+          <Route path='teachers' element={<TeachersList />} />
+            <Route path='teachers/new' element={<NewTeacher />} />
+        </Route>
       </Routes>
     </div>
   );
